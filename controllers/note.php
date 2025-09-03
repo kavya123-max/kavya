@@ -2,21 +2,20 @@
 
 require 'Database.php';
 
-$heading = " note";
+$heading = "note";
 $config = require('config.php');  
 $db = new Database($config['database']);
 
-$note = $db->query('SELECT * FROM notes where id = :id',[
-    
-    'id' =>$_GET['id']
-    ])->fetch();
-if(! $note){
-    abort();
+// Set the note ID (you can get this from $_GET or hardcode for testing)
+$noteId = 2;
+
+// Fetch the note directly
+$note = $db->findOrFail('notes', $noteId);
+
+if ($note['user'] != 1) {
+    abort(Response::FORBIDDEN);
 }
 
-if($note['user'] != 1){
-    abort(response::FORBIDDEN);
-}
 var_dump($note);
 
 function urlIs($value) {
