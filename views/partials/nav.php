@@ -11,6 +11,7 @@
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
               <a href="/" class="<?= urlIs('/')? 'bg-gray-100 text-white' : 'text-gray-300'?>rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">home</a>
               <a href="/about" class="<?=urlIs('/about') ? 'bg-gray-100 text-white' : 'text-gray-300'?>rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">about</a>
+              <a href="/notes" class="<?=urlIs('/notes') ? 'bg-gray-100 text-white' : 'text-gray-300'?>rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">notes</a>
               <a href="/contact" class="<?=urlIs('/contact') ? 'bg-gray-100 text-white' : 'text-gray-300'?>rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">contact</a>
               
             </div>

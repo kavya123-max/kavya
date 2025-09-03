@@ -1,11 +1,13 @@
-    <?php require 'head.php';?>
+<?php require 'head.php';?>
   
   <?php require 'partials/nav.php';?>
-
-  <?php require 'banner.php';?>
+ <?php require "banner.php";?>
+ 
   <main>
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-      <p> hello welcome to home page</p>
+      <h1> hello welcome to home page </h1>
     </div>
   </main>
     <?php require 'footer.php';?>
+
+ 
